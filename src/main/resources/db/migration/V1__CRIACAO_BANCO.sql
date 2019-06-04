@@ -64,7 +64,7 @@ CREATE TABLE public.produto (
     nome varchar(100) NOT NULL,
     marca varchar(50),
     categoria_id integer NOT NULL references public.categoria(id),
-    unidade varchar(3) NOT NULL,
+    unidade_medida varchar(3) NOT NULL,
     codigo_barras varchar(100),
     PRIMARY KEY (id)
 );
